@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>CSS</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			list-style-type: none;
+		}
+
+		a {
+			text-decoration: none;
+		}
+		body {
+			font: 12px "굴림", Gulim;
+			margin: 20px;
+		}
+
+		#gnb{
+			width: 400px;
+			height: 33px;
+			border: 1px solid blue;
+		}
+
+		#gnb li {
+			display: inline;
+		}
+
+		#gnb li a {
+			/* display: inline-block; */
+			float: left;
+			background: #c00;
+			color: #fff;
+			width: 100px;
+			height: 23px;
+			padding-top: 10px;
+			text-align: center;
+		}
+
+		#gnb li a:hover {
+			background: #369;
+		}
+
+		h2 {
+			width: 400px;
+			border: 1px solid red;
+		}
+
+		h2 a {
+			display: none;
+			width: 150px;
+			height: 50px;
+			text-align: center; 
+			background: green;
+		}
+
+		#abc {
+			width: 400px;
+			height: 35px;
+			background: yellow;
+			text-align: center;
+			padding-top: 15px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="container">
+		<h1>주메뉴</h1>
+		<h2>
+			<a>부메뉴12345</a>
+			<a>abc12345</a>
+		</h2>
+		<ul id="gnb">
+			<li><a href="#">COMPANY</a></li>
+			<li><a href="#">PRODUCT</a></li>
+			<li><a href="#">SERVICE</a></li>
+			<li><a href="#">COMMUNITY</a></li>
+		</ul>
+		<div id="abc">
+			가나다라마
+		</div>
+	</div>
+
+</body>
+
+</html>

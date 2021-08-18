@@ -51,33 +51,45 @@
         width: 1000px;
         height: 100px;
         font-size: 25px;
-        text-align: left;
-        background-color: blueviolet;
     }
-    .navi .main {
-        top: 25px;
+    .navi .main a{
         position: relative;
-        width: 310px;
-        height: 100px;
+        width: 350px;
+        height: 70px;
         float: left;
         color: white;
         text-align: center;
+        padding-top: 30px;
+        background-color: blueviolet;
+    }
+    .navi .list ul {
+        float: right;
     }
     .navi .list ul li {
         width: 130px;
         height: 100px;
-        float: right;
+        float: left;
         text-align: center;
-        background-color: red;
+        background-color: blue;
     }
     .navi .list ul li a {
+        width: 80px;
+        height: 20px;
         font-size: 20px;
-        top: 30px;
+        float: right;
         position: relative;
+        word-wrap: break-word;
         color: white;
-        padding: 40px 15px 40px 15px;
+        transition: width 0.5s;
+        padding: 40px 25px 40px 25px;
+        background-color: red;
     }
-    .list ul li:hover {
+    .list ul li :hover {
+        background-color: coral;
+    }
+    .navi .list ul li a:hover {
+        width: 150px;
+        /* letter-spacing: 3px; */
         background-color: coral;
     }
     .content1 {
@@ -166,6 +178,29 @@
         height: 245px;
         background-color: rgb(241, 220, 95);
     }
+    .content4 .hit{
+        width: 390px;
+        height: 40px;
+        color: red;
+        font-size: 30px;
+        text-align: center;
+        background-color: blue;
+        border-bottom: 10px solid black;
+    }
+    .content4 .show {
+        width: 390px;
+        height: 180px;
+        padding: 0px 5px;
+        border-bottom: 10px solid black;
+    }
+    .content4 .show .case {
+        width: 120px;
+        height: 180px;
+        float: left;
+        margin-right: 10px;
+        border-radius: 50px;
+        background: wheat;
+    }
     .content567_box {
         clear: both;
         width: 1000px;
@@ -216,7 +251,7 @@
             </div>
             <div class="navi">
                 <div class="main">
-                    <a>JSL Cosmetics</a>
+                    <a href="#">JSL Cosmetics</a>
                 </div>
                 <div class="list">
                     <ul>
@@ -279,7 +314,20 @@
                 </div>
             </div>
             <div class="content4">
-                content_bottom
+                <div class="hit">
+                    Hit 상품
+                </div>
+                <div class="show">
+                    <div class="case">
+                        1
+                    </div>
+                    <div class="case">
+                        2
+                    </div>
+                    <div class="case">
+                        3
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content567_box">
