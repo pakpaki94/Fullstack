@@ -87,17 +87,17 @@
         height: 250px;
         background-color: lightcoral;
         margin-bottom: 10px;
-        animation: picture 5s infinite;
-        -moz-animation:picture 5s infinite;
-        -webkit-animation:picture 5s infinite;
-        -o-animation:picture 5s infinite;
+        animation: picture 8s infinite;
+        -moz-animation:picture 8s infinite;
+        -webkit-animation:picture 8s infinite;
+        -o-animation:picture 8s infinite;
     }
     @keyframes picture {
-        0% {background: url("img/anti-anti-generation.jpg") }
-        25% {background: url("img/ambitions.jpg") }
-        50% {background: url("img/existence.jpg"); }
-        75% {background: url("img/Eye-Of-The-Storm.jpg") }
-        100% {background: url("img/anti-anti-generation.jpg") }
+        0% {background: url("img/anti-anti-generation.jpg")center no-repeat; background-size: 800px 250px;}
+        25% {background: url("img/ambitions.jpg")center no-repeat;  background-size: 800px 250px;}
+        50% {background: url("img/existence.jpg")center no-repeat;  background-size: 800px 250px;}
+        75% {background: url("img/Eye-Of-The-Storm.jpg")center no-repeat;  background-size: 800px 250px;}
+        100% {background: url("img/anti-anti-generation.jpg")center no-repeat;  background-size: 800px 250px;}
     }
     .content2 {
         float: left;
@@ -231,9 +231,11 @@
     }
     .footer {
         width: 1000px;
+        padding-top: 10px;
         clear: both;
-        height: 200px;
-        background-color: dodgerblue;
+        height: 90px;
+        text-align: center;
+        background-color: cornsilk;
     }
     #fix {
         position: fixed;
