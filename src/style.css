@@ -99,6 +99,13 @@
         75% {background: url("img/Eye-Of-The-Storm.jpg")center no-repeat;  background-size: 800px 250px;}
         100% {background: url("img/anti-anti-generation.jpg")center no-repeat;  background-size: 800px 250px;}
     }
+    @-webkit-keyframes picture {
+        0% {background: url("img/anti-anti-generation.jpg")center no-repeat; background-size: 800px 250px;}
+        25% {background: url("img/ambitions.jpg")center no-repeat;  background-size: 800px 250px;}
+        50% {background: url("img/existence.jpg")center no-repeat;  background-size: 800px 250px;}
+        75% {background: url("img/Eye-Of-The-Storm.jpg")center no-repeat;  background-size: 800px 250px;}
+        100% {background: url("img/anti-anti-generation.jpg")center no-repeat;  background-size: 800px 250px;}
+    }
     .content2 {
         float: left;
         width: 600px;
@@ -141,17 +148,18 @@
         background-color: rgb(178, 240, 178);
     }
     .content3_box {
+        width: 388px;
         height: 27px;
         background-color: lightgreen;
         border-bottom: 1px solid coral;
     }
-    .content3_box .notice {
+    .notice {
         float: left;
         font-size: 15px;
         font-weight: bold;
         padding: 5px 0px 5px 10px;
     }
-    .content3_box .more a {
+    .more a {
         float: right;
         color: black;
         padding: 10px 5px 5px 10px;
@@ -221,13 +229,43 @@
         float: left;
         width: 326.6px;
         height: 250px;
+        margin-right: 10px;
         background-color: rgb(110, 202, 198);
     }
     .content7 {
         float: right;
         width: 326.6px;
         height: 250px;
-        background-color: rgb(110, 202, 198);
+        background-color: rgb(252, 243, 231);
+    }
+    .content7_box {
+        width: 326.6px;
+        height: 27px;
+        background-color: rgb(252, 217, 171);
+        border-bottom: 1px solid coral;
+    }
+    .content7_box2 {
+        width: 326.6px;
+        height: 223px;
+        padding-top: 7px;
+    }
+    .review_title {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-bottom: 5px;
+    }
+    .review_content {
+        width: 276.6px;
+        height: 45px;
+        float: left;
+        margin-bottom: 5px;
+        padding-top: 5px;
+    }
+    .review_content_p {
+        color: coral;
+        font-size: 15px;
+        margin-bottom: 5px;
     }
     .footer {
         width: 1000px;
