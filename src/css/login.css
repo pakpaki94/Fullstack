@@ -93,18 +93,11 @@
         -o-animation:picture 8s infinite;
     }
     @keyframes picture {
-        0% {background: url("./img/anti-anti-generation.jpg")center no-repeat; background-size: 400px 300px;}
-        25% {background: url("./img/ambitions.jpg")center no-repeat;  background-size: 400px 300px;}
-        50% {background: url("./img/existence.jpg")center no-repeat;  background-size: 400px 300px;}
-        75% {background: url("./img/Eye-Of-The-Storm.jpg")center no-repeat;  background-size: 400px 300px;}
-        100% {background: url("./img/anti-anti-generation.jpg")center no-repeat;  background-size: 400px 300px;}
-    }
-    @-webkit-keyframes picture {
-        0% {background: url("./img/anti-anti-generation.jpg")center no-repeat; background-size: 400px 300px;}
-        25% {background: url("./img/ambitions.jpg")center no-repeat;  background-size: 400px 300px;}
-        50% {background: url("./img/existence.jpg")center no-repeat;  background-size: 400px 300px;}
-        75% {background: url("./img/Eye-Of-The-Storm.jpg")center no-repeat;  background-size: 400px 300px;}
-        100% {background: url("./img/anti-anti-generation.jpg")center no-repeat;  background-size: 400px 300px;}
+        0% {background: url("img/anti-anti-generation.jpg")center no-repeat; background-size: 400px 300px;}
+        25% {background: url("img/ambitions.jpg")center no-repeat;  background-size: 400px 300px;}
+        50% {background: url("img/existence.jpg")center no-repeat;  background-size: 400px 300px;}
+        75% {background: url("img/Eye-Of-The-Storm.jpg")center no-repeat;  background-size: 400px 300px;}
+        100% {background: url("img/anti-anti-generation.jpg")center no-repeat;  background-size: 400px 300px;}
     }
     .login_box_containner {
         width : 600px;
