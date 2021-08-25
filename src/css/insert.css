@@ -1,0 +1,219 @@
+@charset "utf-8";
+    body { 
+        font : 12px "굴림", Gulim ;
+        background : url("images/bg_grid.gif") ; 
+    }
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    a {
+        text-decoration: none;
+    }
+    li {
+        list-style: none;
+    }
+    .all {
+        margin: 0 auto;
+        width: 1000px;
+    }
+    .info {
+        width: 1000px;
+        height: 20px;
+        background-color: darkgrey;
+        padding-top: 5px;
+    }
+    .info ul {
+        float: right;
+    }
+    .info ul li {
+        display: inline;
+    }
+    .info ul li a {
+        width: 100px;
+        float: left;
+        border-right: 1px solid black;
+        color: black;
+        text-align: center;
+    }
+    .info ul li:last-child a{
+        border-right: none;
+    }
+    .navi {
+        width: 1000px;
+        height: 100px;
+        font-size: 25px;
+    }
+    .navi .main a{
+        position: relative;
+        width: 350px;
+        height: 70px;
+        float: left;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+        background-color: blueviolet;
+    }
+    .navi .list ul {
+        float: right;
+    }
+    .navi .list ul li {
+        width: 130px;
+        height: 100px;
+        float: left;
+        text-align: center;
+        background-color: blue;
+    }
+    .navi .list ul li a {
+        width: 130px;
+        height: 20px;
+        font-size: 20px;
+        float: right;
+        position: relative;
+        word-wrap: break-word;
+        color: white;
+        transition: width 0.5s;
+        padding: 40px 10px 40px 10px;
+        background-color: red;
+    }
+    .navi .list ul li a:hover {
+        width: 170px;
+        letter-spacing: 3px;
+        background-color: coral;
+    }
+    .menu {
+        margin-top: 135px;
+        float: left;
+        width: 240px;
+        height: 265px;
+        background-color: rgb(243, 228, 228);
+    }
+    .menu_top {
+        text-align: center;
+        background-color: bisque;
+        padding-bottom: 10px;
+    }
+    .menu li {
+        height: 30px;
+        padding-top: 20px;
+        border-bottom: 1px solid rgb(199, 193, 193);
+    }
+    .li_font {
+        color: black;
+        font-size: 19px;
+        padding-left: 20px;
+    }
+    .menu li a {
+        color: black;
+    }
+    #fix {
+        position: fixed;
+        top: 0px;
+    }
+    .notice_box {
+        margin-top: 135px;
+        float: right;
+        width: 750px;
+        height: 700px;
+    }
+    .notice_bar {
+        width: 750px;
+        height: 30px;
+        padding-top: 20px;
+        border-bottom: 1px solid brown;
+    }
+    .notice_main {
+        width: 750px;
+        height: 600px;
+        margin-top: 20px;
+        /* border: 1px solid black; */
+    }
+    .notice {
+        width: 750px;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    table tr {
+        border-bottom: 1px solid rgb(228, 225, 225);
+    }
+    .table_title {
+        width: 100px;
+        height: 40px;
+    }
+    .title_box {
+        width: 600px;
+        height: 40px;
+    }
+    .input {
+        width: 650px;
+        font-size: 15px;
+    }
+    .title_box_hit {
+        float: right;
+        padding-right: 200px;
+    }
+    .table_content {
+        width: 100px;
+        height: 300px;
+    }
+    .content_box {
+        width: 600px;
+        height: 300px;
+    }
+    textarea {
+        width: 650px;
+        height: 280px;
+        margin: 10px 0;
+        font-size: 15px;
+        resize: none;
+    }
+    .table_file {
+        width: 100px;
+        height: 40px;
+    }
+    .file_box {
+        width: 600px;
+        height: 40px;
+    }
+    .table_writer {
+        width: 100px;
+        height: 40px;
+    }
+    .writer_box {
+        width: 500px;
+        height: 40px;
+    }
+    .table_regdate {
+        width: 100px;
+        height: 40px;
+    }
+    .regdate_box {
+        width: 100px;
+        height: 40px;
+        padding-right: 100px;
+    }
+    .page_box {
+        position: relative;
+    }
+    .page a {
+        padding: 5px;
+        color: black;
+    }
+    .insert {
+        position: absolute;
+        top: 20px;
+        right: 5px;
+    }
+    .button {
+        width: 70px;
+        height: 30px;
+    }
+    .footer {
+        width: 1000px;
+        padding-top: 10px;
+        clear: both;
+        height: 90px;
+        text-align: center;
+        background-color: cornsilk;
+    }
