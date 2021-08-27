@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> <!--CDN 링크 -->
+    <link rel="stylesheet" href="css/sign_up.css">
+<script>
+    function send(){
+        if(insert.id.value==""){
+            alert("ID를 입력해주세요")
+            insert.id.focus()
+            return
+        }
+    }
+</script>
+</head>
+<body>
+    <div class="all">
+        <div id="fix">
+            <div class="info">
+                <ul>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="">장바구니</a></li>
+                </ul>
+            </div>
+            <div class="navi">
+                <div class="main">
+                    <a href="main.html">ジャガイモ株式会社</a>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">상품안내</a></li>
+                        <li><a href="#">상품주문</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="#">찾아오는길</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu_fix">
+            <div class="menu">
+                <ul>
+                    <li class="menu_top"><h1>공지사항</h1></li>
+                    <li class="li_font"><a href="notice.html">Sign In</a></li>
+                    <li class="li_font"><a href="#">ID&Password</a></li>
+                    <li class="li_font"><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sign_up_box">
+            <h1 class="sign_up_bar">Sign UP</h1>
+            <div class="sign_up_main">
+                <form name="insert" action="insert_pro.html" method="post">
+                    <table>
+                        <tr>
+                            <th class="table_name">ID</th>
+                            <td class="table_input">
+                                <input class="input" name="id" type="text">
+                                <input type="button" value="ID중복검사">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table_name">성명</th>
+                            <td class="table_input"><input class="input" type="text"></td>
+                        </tr>
+                        <tr>
+                            <th class="table_name">비밀번호</th>
+                            <td class="table_input"><input class="input" type="text"></td>
+                        </tr>
+                        <tr>
+                            <th class="table_name">비밀번호 확인</th>
+                            <td class="table_input"><input class="input" type="text"></td>
+                        </tr>
+                        <tr>
+                            <th class="table_name">지역</th>
+                            <td class="table_input">
+                                <select>
+                                    <option value="">- 지역 -</option>
+                                    <option value="">서울</option>
+                                    <option value="">대전</option>
+                                    <option value="">제주</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table_name">주소</th>
+                            <td class="table_input">
+                                <input class="address" type="text">
+                                <input class="address" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table_name">연락처</th>
+                            <td class="table_input">
+                                <input class="tel" type="text"> -
+                                <input class="tel" type="text"> -
+                                <input class="tel" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table_name">성별</th>
+                            <td class="table_input">
+                                <input name="sex" type="radio"> 남
+                                <input name="sex" type="radio"> 여
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="table_name">연령대</th>
+                            <td class="table_input">
+                                <input type="checkbox"> 20대
+                                <input type="checkbox"> 30대
+                                <input type="checkbox"> 40대
+                                <input type="checkbox"> 50대 이상
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="page_box">
+                    <div class="page">
+                        <input class="sign_up" type="button" onclick="javascript:send()" value="회원가입">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright ⓒ PT PotatoYONG. All Rights Reserved.</p>&nbsp
+            <p>ジャガイモ株式会社
+                代表 : 김용휘 | 登録番号 : 123-45-67890
+                
+                住所 : 2-chōme-12-5 Higashinakano, Nakano City, Tokyo 164-0003 日本
+                
+                <p>ホスティング : PT ジャガイモホールディングス</p>
+                
+                中心販売通関版後 : 2021-東京中野-6083
+                
+                メール : danile94@naver.com</p>
+        </div>
+    </div>
+</body>
+</html>
