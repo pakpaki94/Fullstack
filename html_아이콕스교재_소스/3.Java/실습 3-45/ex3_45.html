@@ -1,15 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="kor" xml:lang="ko">
- <head>
-  <title> new document </title>
-	<meta http-equiv="content-type"  content="text/html; charset=utf-8" />
-	<script type="text/javascript">
-		//<![CDATA[
-			window.open("popup1.html","naver","width=300px, height=400px, left=200px, top=20px, scrollbars=no, toolbar=no, location=no");
-		//]]>
-	</script>
- </head>
- <body>
-  <h1>오프너페이지</h1>
- </body>
+<head>
+<title> new document </title>
+<meta http-equiv="content-type"  content="text/html; charset=utf-8" />
+<script type="text/javascript">
+	//<![CDATA[
+		window.open("popup1.html","naver","width=300px, height=400px, left=200px, top=20px, scrollbars=no, toolbar=no, location=no");
+	//]]>
+	function openA(){
+		window.open("popup1.html","naver","width=300px, height=400px, left=200px, top=20px, scrollbars=no, toolbar=no, location=no");
+	}
+	function goPage(){
+		location.href="popup1.html"
+	}
+</script>
+</head>
+<body>
+<h1>오프너페이지</h1>
+<button type="button" onclick="openA()">팝업창 띄우기</button>
+<a href="javascript:openA()">팝업창 띄우기2</a>
+<button onclick="goPage()">페이지 바꾸기1</button>
+<button onclick="location.href='popup1.html'">페이지 바꾸기2</button>
+<input type="button" value="페이지 바꾸기3" onclick="goPage()">
+</body>
 </html>
