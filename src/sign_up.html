@@ -7,15 +7,7 @@
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> <!--CDN 링크 -->
     <link rel="stylesheet" href="css/sign_up.css">
-<script>
-    function send(){
-        if(insert.id.value==""){
-            alert("ID를 입력해주세요")
-            insert.id.focus()
-            return
-        }
-    }
-</script>
+<script src="js/sign_up.js"></script>
 </head>
 <body>
     <div class="all">
@@ -46,8 +38,8 @@
         <div class="menu_fix">
             <div class="menu">
                 <ul>
-                    <li class="menu_top"><h1>공지사항</h1></li>
-                    <li class="li_font"><a href="notice.html">Sign In</a></li>
+                    <li class="menu_top"><h1>회원가입</h1></li>
+                    <li class="li_font"><a href="#">Sign In</a></li>
                     <li class="li_font"><a href="#">ID&Password</a></li>
                     <li class="li_font"><a href="#">Sign Up</a></li>
                 </ul>
@@ -67,56 +59,56 @@
                         </tr>
                         <tr>
                             <th class="table_name">성명</th>
-                            <td class="table_input"><input class="input" type="text"></td>
+                            <td class="table_input"><input class="input" type="text" name="name"></td>
                         </tr>
                         <tr>
                             <th class="table_name">비밀번호</th>
-                            <td class="table_input"><input class="input" type="text"></td>
+                            <td class="table_input"><input class="input" type="text" name="pass"></td>
                         </tr>
                         <tr>
                             <th class="table_name">비밀번호 확인</th>
-                            <td class="table_input"><input class="input" type="text"></td>
+                            <td class="table_input"><input class="input" type="text" name="pass2"></td>
                         </tr>
                         <tr>
                             <th class="table_name">지역</th>
                             <td class="table_input">
-                                <select>
+                                <select name="area">
                                     <option value="">- 지역 -</option>
-                                    <option value="">서울</option>
-                                    <option value="">대전</option>
-                                    <option value="">제주</option>
+                                    <option value="1">서울</option>
+                                    <option value="2">대전</option>
+                                    <option value="3">제주</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
                             <th class="table_name">주소</th>
                             <td class="table_input">
-                                <input class="address" type="text">
-                                <input class="address" type="text">
+                                <input class="address" type="text" name="address1">
+                                <input class="address" type="text" name="address2">
                             </td>
                         </tr>
                         <tr>
                             <th class="table_name">연락처</th>
                             <td class="table_input">
-                                <input class="tel" type="text"> -
-                                <input class="tel" type="text"> -
-                                <input class="tel" type="text">
+                                <input class="tel" type="text" name="tel1"> -
+                                <input class="tel" type="text" name="tel2"> -
+                                <input class="tel" type="text" name="tel3">
                             </td>
                         </tr>
                         <tr>
                             <th class="table_name">성별</th>
                             <td class="table_input">
-                                <input name="sex" type="radio"> 남
-                                <input name="sex" type="radio"> 여
+                                <input name="sex" type="radio" value="man"> 남
+                                <input name="sex" type="radio" value="women"> 여
                             </td>
                         </tr>
                         <tr>
                             <th class="table_name">연령대</th>
                             <td class="table_input">
-                                <input type="checkbox"> 20대
-                                <input type="checkbox"> 30대
-                                <input type="checkbox"> 40대
-                                <input type="checkbox"> 50대 이상
+                                <input type="checkbox" name="age" value="20"> 20대
+                                <input type="checkbox" name="age" value="30"> 30대
+                                <input type="checkbox" name="age" value="40"> 40대
+                                <input type="checkbox" name="age" value="50"> 50대 이상
                             </td>
                         </tr>
                     </table>
